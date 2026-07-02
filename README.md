@@ -1,8 +1,8 @@
 # 📈 Financial Market Risk Engine
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Monte Carlo](https://img.shields.io/badge/Simulation-Monte_Carlo-purple)
-![Finance](https://img.shields.io/badge/Finance-Risk-green)
+![Monte Carlo](https://img.shields.io/badge/Simulation-Monte%20Carlo-purple)
+![Finance](https://img.shields.io/badge/Financial-Risk-success)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
@@ -15,43 +15,114 @@
 
 # 📌 Project Overview
 
-This project develops a portfolio market risk engine that estimates downside financial risk using Historical Value-at-Risk (VaR), Monte Carlo simulation, and Expected Shortfall (ES).
+Financial institutions must estimate potential portfolio losses before making investment decisions. This project develops a market risk engine capable of estimating downside risk using Historical Value-at-Risk (VaR), Monte Carlo simulation, and Expected Shortfall (ES).
 
 ---
 
-# 🎯 Features
+# 🎯 Business Problem
 
-- Historical VaR
-- Historical Expected Shortfall
-- Monte Carlo VaR
-- Monte Carlo Expected Shortfall
-- Portfolio Risk Analysis
-- Monetary Loss Estimation
+Portfolio managers require quantitative measures of downside risk to determine capital requirements and investment exposure.
+
+This project estimates:
+
+- Historical Value-at-Risk
+- Monte Carlo Value-at-Risk
+- Expected Shortfall
+- Monetary portfolio losses
 
 ---
 
-# 📊 Risk Measures
+# 📂 Dataset
+
+Historical market prices downloaded using **Yahoo Finance**.
+
+Assets analysed:
+
+- User-selected equity portfolio
+
+---
+
+# ⚙ Project Workflow
+
+```
+Historical Prices
+      │
+      ▼
+Daily Returns
+      │
+      ▼
+Portfolio Returns
+      │
+      ▼
+Historical VaR
+      │
+      ▼
+Monte Carlo Simulation
+      │
+      ▼
+Expected Shortfall
+      │
+      ▼
+Risk Report
+```
+
+---
+
+# 📈 Risk Models
 
 Implemented:
 
 - Historical VaR
 - Historical Expected Shortfall
-- Monte Carlo Simulation
-- Portfolio Return Distribution
-- Loss Distribution
+- Monte Carlo VaR
+- Monte Carlo Expected Shortfall
 
 ---
 
-# 📈 Outputs
+# 📊 Outputs
 
 The engine calculates:
 
-- Daily Portfolio Returns
+- Mean Portfolio Return
+- Portfolio Volatility
 - Historical VaR
 - Historical ES
 - Monte Carlo VaR
 - Monte Carlo ES
-- Monetary Portfolio Loss
+- Monetary Loss Estimates
+
+---
+
+# 💼 Business Value
+
+The project demonstrates practical market risk measurement techniques used by banks, asset managers, insurance companies, and investment firms to estimate downside risk and support capital allocation decisions.
+
+---
+
+# 📊 Key Features
+
+✔ Historical Simulation
+
+✔ Monte Carlo Simulation
+
+✔ Expected Shortfall
+
+✔ Monetary Loss Conversion
+
+✔ Portfolio Risk Analytics
+
+---
+
+# 📁 Repository Structure
+
+```
+Market-Risk-Engine/
+│
+├── notebook.ipynb
+├── README.md
+├── requirements.txt
+└── images/
+```
 
 ---
 
@@ -65,16 +136,18 @@ The engine calculates:
 
 ---
 
-# 📌 Future Improvements
+# 🚀 Future Improvements
 
-- GARCH Volatility Forecasting
+- GARCH Volatility Models
+- Portfolio Optimisation
+- Risk Dashboard
 - Backtesting
 - Kupiec Test
 - Multi-Asset Portfolio Analysis
-- Stress Testing
 
 ---
 
 # 👨‍💻 Author
 
 **Kavinash Vijay**
+
